@@ -1,6 +1,8 @@
 # .gitattributes
 # Map file extensions to git filters
 
+*.* diff=meld
+
 *.h filter=rcs-keywords
 *.c filter=rcs-keywords
 *.cc filter=rcs-keywords
