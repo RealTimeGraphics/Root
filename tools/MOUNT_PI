@@ -1,0 +1,6 @@
+#!/bin/bash -x
+#sudo smbmount "\\\\PI\\media" -U rtg2t -c 'mount /PI -u 500 -g 100'
+#sudo smbmount "\\\\PI\\media" -U rtg2t -c 'mount /PI '
+sudo umount /PI2
+sudo mount -t smbfs -o username=rtaylor //PI2/ARM /PI2
+ls -als /PI2
