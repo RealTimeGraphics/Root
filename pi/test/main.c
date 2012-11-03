@@ -15,7 +15,7 @@
  * @version	@$Revision$
  *
  * $Id$
- */
+**/
 
 
 int main()
