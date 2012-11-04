@@ -8,7 +8,6 @@ force second merge
  $Author$
  $Revision$
  $Source$
-test
 *******************************************************/
 
 int main()
