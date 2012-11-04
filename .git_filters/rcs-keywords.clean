@@ -4,7 +4,6 @@
 # @author Martin Turon
 #
 # Copyright (c) 2009-2011 Turon Technologies, Inc.  All rights reserved.
-print $0;
 
 s/\$Id[^\$]*\$/\$Id\$/; 
 s/\$Date[^\$]*\$/\$Date\$/;
