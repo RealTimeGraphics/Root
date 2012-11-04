@@ -9,7 +9,6 @@ force 3
  $Author$
  $Revision$
  $Source$
-test
 *******************************************************/
 
 int main()
