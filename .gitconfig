@@ -1,0 +1,16 @@
+[user]
+	name = rtaylor
+	email = dick@realtimegraphics.co.uk
+[credential]
+	helper = cache --timeout=3600
+[gui]
+[gui]
+	recentrepo = /home/rtaylor/proj0
+
+
+[filter "rcs-keywords"]
+	clean  = .git_filters/rcs-keywords.clean
+	smudge = .git_filters/rcs-keywords.smudge %f
+
+[diff]
+	external = meld
