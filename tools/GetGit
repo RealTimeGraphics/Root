@@ -1,4 +1,11 @@
-git clone https://github.com/RealTimeGraphics/Root
-cd ~/Root
+#!/bin/bash
+git clone https://github.com/RealTimeGraphics/Root $1
+if [ -d $1 ]
+then
+	cd $1
+else
+	cd ~/Root
+fi
+
 git gui &
 
