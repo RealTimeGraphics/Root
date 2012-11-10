@@ -1,22 +1,20 @@
-#!/bin/bash
-
-BTREE="~/Rpi-Stuff/builds"
-KTREE="~/Rpi-Stuff/linux"
-XTOOLS="~/Rpi-Stuff/tools/arm-bcm2708/x86-linux64-cross-arm-linux-hardfp/bin/bcm2708hardfp-"
-TMPDIR="/tmp/rpi"
-
-rm -fR $TMPDIR
-mkdir -p $TMPDIR
-cd $KTREE
-make ARCH=arm menuconfig O=$BTREE
-
-## Make Image first...
- make O=$BTREE ARCH=arm CROSS_COMPILE=$XTOOLS Image
-## Modules as a seperate target...
- make O=$BTREE ARCH=arm CROSS_COMPILE=$XTOOLS modules
-## Install all modules..
- make O=$BTREE ARCH=arm INSTALL_MOD_PATH=$TMPDIR CROSS_COMPILE=$XTOOLS modules_install
-
-cp $BTREE/arch/arm/boot/Image $TMPDIR/kernel.img
-
-exit 0
+mkdir raspberrypi
+cd raspberrypi
+git clone --depth 1 git://github.com/raspberrypi/linux.git
+cd linux
+zcat /proc/config.gz > .config
+#optional
+#make menuconfig 
+# i.e. if you want to alter the configuration. You'll need to first run 
+apt-get install libncurses5-dev
+tmux new -s make
+nice make; nice make modules
+[Ctrl]+[B],[D]
+##############… 5 to 11 hours later…
+tmux a -t m
+[Ctrl]+[D]
+cp arch/arm/boot/Image /boot/kernel.img
+make ARCH=arm modules_install INSTALL_MOD_PATH=/
+cd /opt
+rm -r raspberrypi
+shutdown -r now;
