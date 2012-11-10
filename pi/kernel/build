@@ -6,15 +6,13 @@ zcat /proc/config.gz > .config
 #optional
 #make menuconfig 
 # i.e. if you want to alter the configuration. You'll need to first run 
-apt-get install libncurses5-dev
-tmux new -s make
-nice make; nice make modules
-[Ctrl]+[B],[D]
+apt-get install libncurses5-dev  tmux
+#tmux new -s make
+nice make
+nice make modules
+#[Ctrl]+[B],[D]
 ##############… 5 to 11 hours later…
-tmux a -t m
-[Ctrl]+[D]
-cp arch/arm/boot/Image /boot/kernel.img
+#tmux a -t m
+#[Ctrl]+[D]
+cp arch/arm/boot/Image /boot/Newkernel.img
 make ARCH=arm modules_install INSTALL_MOD_PATH=/
-cd /opt
-rm -r raspberrypi
-shutdown -r now;
