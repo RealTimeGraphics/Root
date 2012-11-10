@@ -11,6 +11,7 @@ force 4
  $Revision$
  $Source$
 *******************************************************/
+#include<stdio.h>
 
 int main()
 {
