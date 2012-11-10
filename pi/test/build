@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Scan"
+autoscan 
+echo "Conf"
+aclocal
+autoconf
+echo "Mv"
+mv configure.scan configure.ac
+echo "Auto make"
+automake   --add-missing
+aclocal
+autoconf
+echo "Make"
+./configure
+make
+
+
