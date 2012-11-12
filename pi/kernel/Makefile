@@ -19,4 +19,7 @@ ins:
 rmod:	
 	sudo rmmod $(MODNAME).ko
 
+clean:
+	rm  $(MODNAME).o  $(MODNAME).ko
+
 endif
