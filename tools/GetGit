@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# $Header: $
+#
 git clone https://github.com/RealTimeGraphics/Root $1
 if [ -d $1 ]
 then
@@ -6,6 +9,6 @@ then
 else
 	cd ~/Root
 fi
-
+#
 git gui &
 
