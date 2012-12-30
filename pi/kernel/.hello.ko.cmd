@@ -1,0 +1,1 @@
+cmd_/home/rtaylor/Root/pi/kernel/hello.ko := ld -EL -r  -T /home/rtaylor/Root/pi/kernel/raspberrypi/linux/scripts/module-common.lds --build-id  -o /home/rtaylor/Root/pi/kernel/hello.ko /home/rtaylor/Root/pi/kernel/hello.o /home/rtaylor/Root/pi/kernel/hello.mod.o

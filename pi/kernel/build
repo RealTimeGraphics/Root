@@ -8,6 +8,7 @@ zcat /proc/config.gz > .config
 # i.e. if you want to alter the configuration. You'll need to first run 
 apt-get install libncurses5-dev  tmux
 #tmux new -s make
+date
 nice make
 nice make modules
 #[Ctrl]+[B],[D]
@@ -16,3 +17,4 @@ nice make modules
 #[Ctrl]+[D]
 cp arch/arm/boot/Image /boot/Newkernel.img
 make ARCH=arm modules_install INSTALL_MOD_PATH=/
+date
