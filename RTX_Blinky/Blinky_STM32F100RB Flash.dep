@@ -1,0 +1,21 @@
+Dependencies for Project 'Blinky', Target 'STM32F100RB Flash': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_ld_vl.s)(0x51C806A4)(--cpu Cortex-M3 --pd "__RTX SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x--list .\flash\startup_stm32f10x_ld_vl.lst --xref -o .\flash\startup_stm32f10x_ld_vl.o --depend .\flash\startup_stm32f10x_ld_vl.d)
+F (.\system_stm32f10x.c)(0x51C806A4)(-c --cpu Cortex-M3 -D__RTX -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_LD_VL -o .\flash\system_stm32f10x.o --omf_browse .\flash\system_stm32f10x.crf --depend .\flash\system_stm32f10x.d)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8044A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8044A)
+F (.\RTX_Conf_CM.c)(0x51C806A4)(-c --cpu Cortex-M3 -D__RTX -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_LD_VL -o .\flash\rtx_conf_cm.o --omf_browse .\flash\rtx_conf_cm.crf --depend .\flash\rtx_conf_cm.d)
+I (C:\Keil\ARM\RV31\INC\RTL.h)(0x51C80F66)
+I (C:\Keil\ARM\RV31\INC\RTX_lib.c)(0x51C80F66)
+F (.\Blinky.c)(0x51C806A4)(-c --cpu Cortex-M3 -D__RTX -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_LD_VL -o .\flash\blinky.o --omf_browse .\flash\blinky.crf --depend .\flash\blinky.d)
+I (C:\Keil\ARM\RV31\INC\RTL.h)(0x51C80F66)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8044A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8044A)
+F (.\Abstract.txt)(0x51C806A4)()
